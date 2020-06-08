@@ -1,0 +1,32 @@
+apt-get update
+apt-get upgrade
+Y
+sudo dpkg --add-architecture i386; sudo apt update; sudo apt install mailutils postfix curl wget file tar bzip2 gzip unzip bsdmainutils python util-linux ca-certificates binutils bc jq tmux lib32gcc1 libstdc++6 lib32stdc++6 steamcmd
+Y
+Internet Site
+adduser mhserver
+enter password : zE4ODYyMjg0N --> Exemple de mot de passe
+Y
+su - mhserver
+wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh mhserver
+ls
+./mhserver install
+/home/mhserver Y
+Y
+Y
+ls
+
+----A config en fonction de votre hébergeur permet de configuer les port si ils sont fermés-----
+su-root
+ufw allow 7777/tcp
+ufw allow 27015/udp
+ufw allow 27015/tcp
+ufw allow 15000/tcp
+ufw allow 15000/udp
+---------------------------------------------------------------------------------------------------
+
+ls
+./mhserver start
+
+
+Fichier de config serv Mordhau -> Game.ini
